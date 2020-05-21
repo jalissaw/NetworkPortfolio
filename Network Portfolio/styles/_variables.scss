@@ -1,0 +1,23 @@
+$primary-color: rgb(255, 253, 251);
+$secondary-color: rgb(17, 47, 184);
+$tri-color: rgb(0, 1, 8);
+$allphones: "(min-width: 300px) and (max-width: 415px)";
+$lphone: "(min-width: 376px) and (max-width: 415px)";
+$mphone: "(min-width: 321px) and (max-width: 375px)";
+$sphone: "(max-width: 320px)";
+
+
+@mixin mq ($arg) {
+     @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+
+// @mixin phones ($min, $max) {
+//     @media screen and (min-width: $min) and (max-width: $max) {
+//         @content;
+//     }
+// }
+
+
+

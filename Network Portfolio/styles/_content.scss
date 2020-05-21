@@ -1,0 +1,103 @@
+
+main {
+        margin: 0;
+        width: 100%;
+
+    .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        background-image: linear-gradient(rgba($secondary-color, 0.1)),
+                            url('/imgs/network.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        .title {
+            width: 100%;
+            height: 20%;
+            
+            .projecttitle {
+                font-size: 1.4em;
+                padding: 10px;
+                text-transform: uppercase;
+                text-align: center;
+                color: $primary-color;
+                background-image: linear-gradient(rgba($secondary-color, 0.5));
+            }
+        }
+        
+        .card {
+            height: auto;
+            flex-basis: 100px;
+            margin: 20px 20px;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: ease 0.5s all;
+            
+            &.card-appear {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            @media #{$mphone} {
+                zoom: 0.9;
+            }
+            @media #{$sphone} {
+                zoom: 0.75;
+            }
+
+            img {
+            height: 250px;
+            width: 350px;
+            
+            }
+
+            .info {
+                padding: 10px 15px;
+                color: $primary-color;
+                background-image: linear-gradient(rgba($tri-color, 0.8));
+            }
+        }
+    }
+
+    //About 
+
+    .aboutme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(rgba($secondary-color, 0.1)),
+        url('/imgs/network.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: $primary-color;
+        width: 100%;
+        
+        .textabout {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+
+            h4 {
+                text-transform: uppercase;
+                font-size: 1.3em;
+                background: rgba($secondary-color, 0.4);
+                padding: 8px;
+                position: relative;
+
+            }
+
+            .infoabout {
+                padding: 25px 50px;
+                text-align: center;
+                background-image: linear-gradient(rgba($tri-color, 0.8));
+            }
+        }
+    }
+}
